@@ -38,16 +38,7 @@ input.onPinPressed(TouchPin.P2, function () {
     basic.showString("AVYAAN SUREKA IS THE BEST")
 })
 input.onButtonPressed(Button.AB, function () {
-    music.play(music.stringPlayable("C D E F G A B C5 ", 120), music.PlaybackMode.UntilDone)
-    turtle.pen(TurtlePenMode.Down)
-    turtle.setBrightness(255)
-    turtle.forward(4)
-    turtle.turnRight()
-    turtle.forward(4)
-    turtle.turnLeft()
-    turtle.back(4)
-    turtle.turnLeft()
-    turtle.forward(4)
+	
 })
 input.onButtonPressed(Button.B, function () {
     music.play(music.stringPlayable("B B A A A G G G ", 120), music.PlaybackMode.UntilDone)
@@ -89,17 +80,16 @@ input.onGesture(Gesture.Shake, function () {
     basic.showString("AVYAAN SUREKA IS THE BEST")
 })
 input.onSound(DetectedSound.Quiet, function () {
-    music.play(music.stringPlayable("C5 B A G F E D C ", 120), music.PlaybackMode.UntilDone)
-    basic.showNumber(99698)
-    basic.showLeds(`
-        # . . . .
-        . . # . .
-        # . . # .
-        . . # . .
-        . . . . .
-        `)
-    basic.showIcon(IconNames.Butterfly)
-    basic.showString("AVYAAN SUREKA IS THE BEST")
+    music.play(music.stringPlayable("C D E F G A B C5 ", 120), music.PlaybackMode.UntilDone)
+    turtle.pen(TurtlePenMode.Down)
+    turtle.setBrightness(255)
+    turtle.forward(4)
+    turtle.turnRight()
+    turtle.forward(4)
+    turtle.turnLeft()
+    turtle.back(4)
+    turtle.turnLeft()
+    turtle.forward(4)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     music.play(music.stringPlayable("C5 C5 A B A G F E ", 120), music.PlaybackMode.UntilDone)
